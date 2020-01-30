@@ -13,6 +13,10 @@
 		"debian": {
 			"mirror": "http://debian.saix.net",
 			"dists": ["/dists/"]
+		},
+		"debian-security": {
+			"mirror": "http://security.debian.org/debian-security",
+			"dists": ["/dists/"]
 		}
 	}
 }

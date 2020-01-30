@@ -67,3 +67,32 @@ sudo systemctl enable pkgcache
 
 sudo systemctl start pkgcache
 ```
+
+## Usage
+
+You can simply add the URL to your distribution's repository list. Here are some examples; just replace `server_ip` with the IP of the server running `pkgcache` (these assume you're running as `root`):
+
+* Arch:
+
+```bash
+echo "Server = http://server_ip:3000/arch/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
+pacman -Sy
+```
+
+* Alpine:
+
+```bash
+echo "http://server_ip:3000/alpine" > /etc/apk/repositories
+apk update
+```
+
+* Debian:
+
+```bash
+cat > /etc/apt/sources.list << "EOF"
+deb http://server_ip:3000/debian stable main
+deb http://server_ip:3000/debian stable-updates main
+deb http://server_up:3000/debian-security stable/updates main
+EOF
+apt update
+```
