@@ -1,13 +1,13 @@
 {
 	"cacheDir": "./cache",
-	"distTimeout": 60,
+	"distTimeout": 10,
 	"repos": {
 		"arch": {
 			"mirror": "http://mirror.is.co.za/mirrors/archlinux.org",
 			"dists": ["\\.db$"]
 		},
 		"alpine": {
-			"mirror": "http://dl-cdn.alpinelinux.org/alpine",
+			"mirror": "http://dl-cdn.alpinelinux.org/alpine/latest-stable",
 			"dists": ["/APKINDEX\\.tar\\.gz$"]
 		},
 		"debian": {

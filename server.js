@@ -1,6 +1,6 @@
 'use strict';
 
-const PORT = 3000;
+const PORT = 7542;
 
 let http = require('http');
 let fs = require('fs');
