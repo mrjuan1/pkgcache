@@ -82,7 +82,7 @@ pacman -Sy
 * Alpine:
 
 ```bash
-echo "http://server_ip:3000/alpine" > /etc/apk/repositories
+echo "http://server_ip:3000/alpine/main" > /etc/apk/repositories
 apk update
 ```
 
