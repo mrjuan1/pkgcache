@@ -1,13 +1,21 @@
 {
 	"cacheDir": "./cache",
-	"distTimeout": 10,
+	"distTimeout": 30,
 	"repos": {
 		"arch": {
 			"mirror": "http://mirror.is.co.za/mirrors/archlinux.org",
 			"dists": ["\\.db$"]
 		},
+		"arch-arm": {
+			"mirror": "http://mirror.archlinuxarm.org/",
+			"dists": ["\\.db$"]
+		},
 		"alpine": {
 			"mirror": "http://dl-cdn.alpinelinux.org/alpine/latest-stable",
+			"dists": ["/APKINDEX\\.tar\\.gz$", "releases"]
+		},
+		"alpine-testing": {
+			"mirror": "http://dl-cdn.alpinelinux.org/alpine/edge/testing",
 			"dists": ["/APKINDEX\\.tar\\.gz$"]
 		},
 		"debian": {
@@ -16,6 +24,26 @@
 		},
 		"debian-security": {
 			"mirror": "http://security.debian.org/debian-security",
+			"dists": ["/dists/"]
+		},
+		"ubuntu": {
+			"mirror": "http://za.archive.ubuntu.com/ubuntu",
+			"dists": ["/dists/"]
+		},
+		"ubuntu-ports": {
+			"mirror": "http://za.ports.ubuntu.com/ubuntu",
+			"dists": ["/dists/"]
+		},
+		"canonical": {
+			"mirror": "http://archive.canonical.com/ubuntu",
+			"dists": ["/dists/"]
+		},
+		"raspbian": {
+			"mirror": "http://raspbian.raspberrypi.org/raspbian",
+			"dists": ["/dists/"]
+		},
+		"rpi": {
+			"mirror": "http://archive.raspberrypi.org/debian",
 			"dists": ["/dists/"]
 		}
 	}

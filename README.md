@@ -4,12 +4,6 @@
 
 Install any recent version of NodeJS that supports ES6.
 
-For development (eslint), you can also run:
-
-```bash
-npm i --only=dev
-```
-
 ## Setup
 
 Edit `config.json` to suit your needs. An example file is included for reference.
